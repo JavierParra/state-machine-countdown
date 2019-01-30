@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<title>Counter</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<section id="select">
+			<form action="">
+				<label>
+					Selecciona una fecha:<br />
+					<input type="date" placeholder="yyyy-mm-dd" />
+				</label>
+			</form>
+			<p class="error"></p>
+		</section>
+		<section id="countdown">
+			<div class="counters">
+				<div data-fragment="day">
+					<span class="num"></span>
+					<span class="description">Días</span>
+				</div>
+				<div data-fragment="hour">
+					<span class="num"></span>
+					<span class="description">Horas</span>
+				</div>
+				<div data-fragment="minute">
+					<span class="num"></span>
+					<span class="description">Minutos</span>
+				</div>
+				<div data-fragment="second">
+					<span class="num"></span>
+					<span class="description">Segundos</span>
+				</div>
+			</div>
+			<a class="change" href="javascript:;">Cambiar fecha</a>
+			<a class="finish" href="javascript:;">Terminar en 5 segundos</a>
+		</section>
+		<section id="arrived">
+			<h1>Congratulations!</h1>
+			<h2>The wait is over!</h2>
+		</section>
+		<script src="js/main.js"></script>
+	</body>
+</html>
